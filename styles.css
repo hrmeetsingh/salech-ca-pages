@@ -13,7 +13,7 @@ header {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
 }
 
 .logo {
@@ -53,7 +53,8 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     color: #fff;
-    text-align: center;
+    text-align: left;
+    align-items: left;
 }
 
 .hero h1 {
