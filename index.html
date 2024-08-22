@@ -15,15 +15,34 @@
     <body>
         <header>
             <div class="logo">Salech</div>
-            <nav>
-                <ul>
+            <nav class="navbar">
+                <ul class="navbar-menu" id="navbarMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <!-- <div class="navbar-dropdown" id="navbarDropdown">
+                    <ul class="dropdown-content" id="dropdownContent">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div> -->
+                <div class="navbar-toggle" id="navbarToggle">
+                    &#9776; 
+                </div>
             </nav>
         </header>
+        <div class="navbar-dropdown" id="navbarDropdown">
+            <ul class="dropdown-content" id="dropdownContent">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
 
         <main>
             <section class="hero">
@@ -48,5 +67,6 @@
         <footer>
             <p>&copy; 2024 Salech. All rights reserved.</p>
         </footer>
+        <script src="scripts/nav-toggle.js"></script>
     </body>
 </html>

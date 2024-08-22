@@ -16,6 +16,12 @@ header {
     align-items: left;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -44,7 +50,7 @@ nav a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url("images/hero.jpg");
+    background-image: url("./images/hero.jpg");
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -69,7 +75,7 @@ nav a:hover {
 }
 
 .btn {
-    background: url("hero.jpg");
+    /* background: url("hero.jpg"); */
     background-color: #cfb863;
     color: #fff;
     padding: 10px 20px;
@@ -107,4 +113,126 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 14px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: #333; */
+    /* padding: 10px 20px; */
+    color: white;
+}
+
+/* .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+} */
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 15px;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    /* padding: 10px 15px; */
+    display: block;
+}
+
+.navbar-menu li a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown Styles */
+.navbar-dropdown {
+    display: none; /* Hidden by default */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #333; */
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+}
+
+/* .dropdown-content li a:hover {
+    background-color: #575757;
+} */
+
+.navbar-dropdown.active .dropdown-content {
+    display: block;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-dropdown {
+        display: none; 
+    }
+
+    .dropdown-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+        float: right;
+    }
+
+    .navbar-dropdown.active{
+        background-color: #1e1e1e;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+    }
+}
+
+
+/* others */
+.navbar-dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-dropdown li {
+    margin-left: 20px;
+}
+
+.navbar-dropdown a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-dropdown a:hover {
+    color: #ccc;
 }
