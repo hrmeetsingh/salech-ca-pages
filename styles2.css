@@ -304,7 +304,9 @@ object,
 svg,
 video {
     display: block;
-    vertical-align: middle
+    height: 10rem;
+    vertical-align: middle;
+    align-content: center;
 }
 
 img,
