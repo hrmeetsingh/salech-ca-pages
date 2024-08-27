@@ -13,58 +13,52 @@
             rel="stylesheet"
         />
     </head>
-    <body>
-        <header>
-            <div class="logo">Salech</div>
-            <nav class="navbar">
-                <ul class="navbar-menu" id="navbarMenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <!-- <div class="navbar-dropdown" id="navbarDropdown">
-                    <ul class="dropdown-content" id="dropdownContent">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div> -->
-                <div class="navbar-toggle" id="navbarToggle">
-                    &#9776; 
+    <body class="min-h-screen flex justify-center w-full flex-col">
+        <script>!function () { try { var d = document.documentElement, c = d.classList; c.remove('light', 'dark'); var e = localStorage.getItem('theme'); if ('system' === e || (!e && true)) { var t = '(prefers-color-scheme: dark)', m = window.matchMedia(t); if (m.media !== t || m.matches) { d.style.colorScheme = 'dark'; c.add('dark') } else { d.style.colorScheme = 'light'; c.add('light') } } else if (e) { c.add(e || '') } if (e === 'light' || e === 'dark') d.style.colorScheme = e } catch (e) { } }()</script>
+        <main class="flex justify-center w-full px-2">
+            <div class="w-full max-w-md">
+                <div class="rounded-lg border bg-card  text-card-foreground shadow-sm grid  justify-center w-full gap-8 pt-10 pb-8 px-6">
+                    <div class="flex justify-start items-center pb-6 border-b">
+                        <!-- <svg viewBox="0 0 500 670" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+                            <g transform="matrix(4.253014087677002, 0, 0, 4.718772888183594, -312.9996337890625, -654.9957275390625)" style="">
+                              <path style="stroke: rgb(5, 5, 5); fill: rgb(2, 2, 2); transform-box: fill-box; transform-origin: 50% 50%;" d="M -164.189 -246.225 H -110.789 A 6.8 6.8 0 0 1 -103.989 -239.425 V -238.555 A 6.33 6.33 0 0 1 -110.319 -232.225 H -164.689 A 6.3 6.3 0 0 1 -170.989 -238.525 V -239.425 A 6.8 6.8 0 0 1 -164.189 -246.225 Z" transform="matrix(-0.766045, 0.642787, -0.642787, -0.766045, 275.878331, 456.246815)" bx:shape="rect -170.989 -246.225 67 14 6.8 6.8 6.33 6.3 1@66b2cfce">
+                                <desc>Salech logo for white background</desc>
+                                <title>Salech Logo</title>
+                              </path>
+                              <path style="stroke: rgb(5, 5, 5); fill: rgb(2, 2, 2); transform-origin: 137.503px 194.956px;" d="M 110.8 187.958 H 164.206 A 6.8 6.8 0 0 1 171.006 194.758 V 195.625 A 6.33 6.33 0 0 1 164.676 201.955 H 108 A 4 4 0 0 1 104 197.955 V 194.758 A 6.8 6.8 0 0 1 110.8 187.958 Z" transform="matrix(0.766045, -0.642787, 0.642787, 0.766045, -13.081075, -15.18115)" bx:shape="rect 104 187.958 67.006 13.997 6.8 6.8 6.33 4 1@65ea0d7d">
+                                <desc>Salech logo for white background</desc>
+                                <title>Salech Logo</title>
+                              </path>
+                              <rect style="stroke: rgb(0, 0, 0); fill: rgb(216, 211, 214); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-0.000002, -1, 1, -0.000002, -73.810099, -331.554895)" x="197.757" y="494.74" width="15.275" height="70.115" rx="5.7" ry="5.7">
+                                <desc>Salech logo for white background</desc>
+                                <title>Salech Logo</title>
+                              </rect>
+                            </g>
+                          </svg> -->
+                        </div>
+                <div class="gap-2 grid">
+                    <h1 class="text-3xl font-semibold  leading-tight">Solutions for your business<br />Get Billions of Qubits.</h1>
+                    <h3 class="text-muted-foreground pr-2">We&#x27;re building something that helps you scale your business with ease</h3>
+                    <div class="mt-5">
+                        <form class="grid gap-2 max-w-sm w-full">
+                            <div class="space-y-2"><input
+                                    class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+                                    placeholder="Email Address" id=":R2f9uija:-form-item"
+                                    aria-describedby=":R2f9uija:-form-item-description" aria-invalid="false"
+                                    name="email" value="" /></div><button
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                                type="submit">Stay Updated</button>
+                        </form>
+                        <div class="flex justify-start">
+                            <div class="w-full border-t mt-6"></div>
+                        </div>
+                        <p class="text-sm  text-muted-foreground mt-6 text-start pr-4">Want to partner or get involved?
+                            <a href="mailto:harmeetsalech@gmail.com" class="underline">Email us.</a></p>
+                    </div>
                 </div>
-            </nav>
-        </header>
-        <div class="navbar-dropdown" id="navbarDropdown">
-            <ul class="dropdown-content" id="dropdownContent">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-        <main>
-            <section class="hero">
-                <h1>Something awesome is coming...</h1>
-                <p>Visit us again to discover the best solutions for your business</p>
-                <a href="#" class="btn">Learn More</a>
-            </section>
-
-            <section class="content">
-                <h2>About Us</h2>
-                <p>
-                    We are a team of dedicated professionals committed to
-                    providing top-notch services to our clients. Our mission is
-                    to help businesses like yours succeed.
-
-                    We are building something awesome, please visit again to
-                    find out
-                </p>
-            </section>
+                </div>
+            </div>
         </main>
-
         <footer>
             <p>&copy; 2024 Salech. All rights reserved.</p>
         </footer>
